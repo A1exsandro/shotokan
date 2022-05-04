@@ -2,16 +2,16 @@
 
 one:
   name: MyString
-  age: MyString
+  age: 1
   gender: MyString
   email: MyString
-  phone: 1
+  phone: MyString
   photo: MyString
 
 two:
   name: MyString
-  age: MyString
+  age: 1
   gender: MyString
   email: MyString
-  phone: 1
+  phone: MyString
   photo: MyString

@@ -1,14 +1,32 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Students</h1>
+<div class="students" >
+  <h1>Students</h1>
 
-<div id="students">
-  <% @students.each do |student| %>
-    <%= render student %>
-    <p>
-      <%= link_to "Show this student", student %>
-    </p>
-  <% end %>
+  <table>
+      <thead>
+          <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Genero</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th>Foto</th>
+          </tr>
+      </thead>
+      <tbody>
+          <% @students.each do |student| %>
+          <tr>
+              <td><%= student.name %></td>
+              <td><%= student.age %></td>
+              <td><%= student.gender %></td>
+              <td class="warning"><%= student.email %></td>
+              <td class="primary"><%= student.phone %></td>
+              <td><%= student.photo %></td>
+              <td><%= link_to "Show this student", student %></td>
+          </tr>
+          <% end %>
+      </tbody>
+  </table>
+  <%= link_to "New student", new_student_path %>
 </div>
-
-<%= link_to "New student", new_student_path %>

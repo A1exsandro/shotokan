@@ -170,12 +170,14 @@
  
  aside .logo {
      display: flex;
-     gap: 0.8rem;
+     align-items: center;
+     gap: 1.5rem;
  }
  
  aside .logo img {
-     width: 2rem;
-     height: 2rem;
+     width: 3.5rem;
+     height: 3.5rem;
+     margin-left: 1rem;
  }
  
  aside .close {
@@ -661,8 +663,10 @@
      }
  
      aside .close {
-         display: inline-block;
+         display: block;
          cursor: pointer;
+         margin-top: 0.6rem;
+         margin-left: 2rem;
      }
  
      main {

@@ -607,7 +607,8 @@
  
      main table tbody tr td:last-child,
      main table tbody tr td:nth-child(3),
-     main table tbody tr td:nth-child(5) {
+     main table tbody tr td:nth-child(5),
+     main table tbody tr td:nth-child(6) {
          display: none;
      }
  }
